@@ -6,6 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mike's Burgers | Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        #header {
+            font-family: 'Coiny', cursive;
+        }
+
+        #container {
+            background-color: limegreen;
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 40px;
+            color: darkblue;
+        }
+
+        /* Links */
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkcyan;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        li {
+            font-style: italic;
+        }
+
+        /* Table Styles */
+
+        table,
+        td {
+            border: none;
+            padding: 5px 10px;
+            border-spacing: none;
+        }
+
+        caption {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            height: 30px;
+        }
+
+        th {
+            background-color: limegreen;
+            color: white;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #d5d2cb;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -22,64 +93,87 @@
     </div>
 
     <hr />
+    <div id="container">
+        <div id="menu">
 
-    <div id="menu">
+            <div id="title">
+                <h1>Menu</h1>
+            </div>
 
-        <div id="title">
-            <h1>Menu</h1>
+            <div id="menu-items">
+                <h3>Double Bacon w/ Cheese</h3>
+                <ul>
+                    <li>1lb all beef patty</li>
+                    <li>Loaded with American Cheese</li>
+                    <li>Loaded with real bacon</li>
+                    <li>Served with friends</li>
+                </ul>
+
+                <h3>Double Burger</h3>
+                <ul>
+                    <li>1lb all beef patty</li>
+                    <li>Special Sauce</li>
+                    <li>Served with friends</li>
+                </ul>
+
+                <h3>Triple Bacon w/ Cheese</h3>
+                <ul>
+                    <li>3x 1lb all beef patty</li>
+                    <li>Loaded with American Cheese</li>
+                    <li>Loaded with real bacon</li>
+                    <li>Served with friends</li>
+                </ul>
+
+                <h3>Single Burger</h3>
+                <ul>
+                    <li>.5lb all beef patty</li>
+                    <li>Special Sauce</li>
+                    <li>Served with friends</li>
+                </ul>
+
+                <h3>Good Burger</h3>
+                <ul>
+                    <li>1lb all beef patty</li>
+                    <li>Loaded with American Cheese</li>
+                    <li>Egg</li>
+                    <li>Special Sauce</li>
+                    <li>Served with friends</li>
+                </ul>
+
+                <h3>Build Your Own</h3>
+                <ul>
+                    <li>Choice of patty</li>
+                    <li>Choice of toppings</li>
+                    <li>Choice of sauce</li>
+                    <li>Choice of side</li>
+                </ul>
+
+            </div>
         </div>
 
-        <div id="menu-items">
-            <h3>Double Bacon w/ Cheese</h3>
-            <ul>
-                <li>1lb all beef patty</li>
-                <li>Loaded with American Cheese</li>
-                <li>Loaded with real bacon</li>
-                <li>Served with friends</li>
-            </ul>
-
-            <h3>Double Burger</h3>
-            <ul>
-                <li>1lb all beef patty</li>
-                <li>Special Sauce</li>
-                <li>Served with friends</li>
-            </ul>
-
-            <h3>Triple Bacon w/ Cheese</h3>
-            <ul>
-                <li>3x 1lb all beef patty</li>
-                <li>Loaded with American Cheese</li>
-                <li>Loaded with real bacon</li>
-                <li>Served with friends</li>
-            </ul>
-
-            <h3>Single Burger</h3>
-            <ul>
-                <li>.5lb all beef patty</li>
-                <li>Special Sauce</li>
-                <li>Served with friends</li>
-            </ul>
-
-            <h3>Good Burger</h3>
-            <ul>
-                <li>1lb all beef patty</li>
-                <li>Loaded with American Cheese</li>
-                <li>Egg</li>
-                <li>Special Sauce</li>
-                <li>Served with friends</li>
-            </ul>
-
-            <h3>Build Your Own</h3>
-            <ul>
-                <li>Choice of patty</li>
-                <li>Choice of toppings</li>
-                <li>Choice of sauce</li>
-                <li>Choice of side</li>
-            </ul>
-
+        <div id="beverages-table">
+            <table>
+                <caption>Tasty Beverages</caption>
+                <tr>
+                    <td>Liter of Cola</td>
+                    <td>$7.00</td>
+                </tr>
+                <tr>
+                    <td>Root Beer</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Mountain Dew</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Arnold Palmer</td>
+                    <td>$5.00</td>
+                </tr>
+            </table>
         </div>
+
     </div>
-
     <hr />
 
     <div id="footer">

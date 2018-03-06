@@ -1,0 +1,19 @@
+#header {
+    font-family: 'Coiny', cursive;
+}
+
+#container {
+    background-color: limegreen;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+a:hover {
+   font-weight: bold;
+}
