@@ -11,6 +11,11 @@ h1 {
     text-align: center;
 }
 
+noscript {
+    color: red;
+    text-align: center;
+}
+
 .carousel-contrainer {
     background-color: limegreen;
 }
