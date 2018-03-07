@@ -1,5 +1,20 @@
 #header {
     font-family: 'Coiny', cursive;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: url("../img/burger-jumbotron.jpeg");
+
+}
+
+.display-3,.lead {
+    color: white;
+    font-weight: bold;
 }
 
 #container {
