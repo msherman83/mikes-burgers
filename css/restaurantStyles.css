@@ -1,3 +1,7 @@
+body {
+    font-family: 'Permanent Marker', cursive !important;
+}
+
 #header {
     font-family: 'Coiny', cursive;
     background-color: lightblue;
@@ -5,6 +9,19 @@
 
 h1 {
     text-align: center;
+}
+
+.carousel-contrainer {
+    background-color: limegreen;
+}
+
+#image {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 50px;
 }
 
 .jumbotron {
@@ -18,6 +35,7 @@ h1 {
 }
 
 #container {
+    margin-top:25px;
     background-color: limegreen;
 }
 
@@ -31,4 +49,9 @@ a:visited {
 
 a:hover {
    font-weight: bold;
+}
+
+footer {
+    padding-top: 25px;
+    text-align: center;
 }

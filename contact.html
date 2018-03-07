@@ -11,14 +11,16 @@
     <!-- Font Awesome for Glyphicon -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
     <style>
         body {
+            font-family: 'Coiny', cursive;
             background-color: lightgray;
+            
         }
 
         #header {
-            font-family: 'Coiny', cursive;
             background-color: lightblue;
         }
 
@@ -51,6 +53,10 @@
         .important {
             font-weight: bold;
         }
+
+        footer {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -63,7 +69,9 @@
 
     <ul class="nav nav-pills">
         <li class="nav-item">
-            <a class="nav-link" href="./index.html"><i class="fas fa-home"></i></a>
+            <a class="nav-link" href="./index.html">
+                <i class="fas fa-home"></i>
+            </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="./menu.html">Menu</a>
@@ -79,63 +87,118 @@
             <div id="title">
                 <h1>Contact Us</h1>
             </div>
-            <form action="submit.htnml" method="POST">
-                <label for="name" class="important">Name:</label>
-                <input type="text" id="name" name="name">
-                <br>
-                <label for="email" class="important">Email:</label>
-                <input type="email" id="email" name="email">
-                <br>
-                <label for="phone" class="important">Phone Number:</label>
-                <input type="text" id="phone" name="phone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mx-auto">
 
-                <br>
 
-                <label for="contact">Reason for Inquiry:</label>
-                <select id="contact" name="contact">
-                    <option value="default" selected>Catering-</option>
-                    <option value="private">Private Party</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
-                </select>
+                        <form class="mx-auto">
+                            <div class="form-group row">
+                                <label for="name" class="col-sm-2 col-form-label">Name</label>
+                                <div class="col-sm-4">
+                                    <input type="name" class="form-control" id="name" placeholder="Password">
+                                </div>
+                            </div>
 
-                <br>
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-4">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
 
-                <label for="info">Additional Information</label>
-                <textarea id="info" rows="4" cols="25"></textarea>
+                            <div class="form-group row">
+                                <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
+                                <div class="col-sm-4">
+                                    <input type="phone" class="form-control" id="phone" placeholder="555-555-5555">
+                                </div>
+                            </div>
 
-                <br>
+                            <div class="form-group row">
+                                <label for="inquiry" class="col-sm-2 col-form-label">Reason for Inquiry</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control" id="inquiry">
+                                        <option>Catering</option>
+                                        <option>Private Party</option>
+                                        <option>Feedback</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                <legend>Have you been to the restaurant?</legend>
-                <input type="radio" id="choice1" name="questionnaire" value="yes">
-                <label for="choice1">Yes</label>
-                <input type="radio" id="choice2" name="questionnaire" value="no">
-                <label for="choice2">No</label>
+                            <div class="form-group row">
+                                <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Additional Information</label>
+                                <div class="col-sm-4">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
 
-                <br>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <legend class="col-form-label col-sm-2 pt-0">Have you been to the restaurant?</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
 
-                <legend>Best days to contact:</legend>
-                <input type="checkbox" id="monday" name="daysContact" value="monday">
-                <label for="monday">M</label>
-                <input type="checkbox" id="tuesday" name="daysContact" value="tuesday">
-                <label for="tuesday">T</label>
-                <input type="checkbox" id="wednesday" name="daysContact" value="wednesday">
-                <label for="wednesday">W</label>
-                <input type="checkbox" id="thursday" name="daysContact" value="thursday">
-                <label for="thursday">Th</label>
-                <input type="checkbox" id="friday" name="daysContact" value="friday">
-                <label for="friday">F</label>
-                <br>
-
-                <input type="submit" name="submit" value="Submit">
-
-            </form>
-            <div id="contact-form">
-
+                            <div class="form-group row">
+                                <div class="col-sm-2">Best days to contact:</div>
+                                <div class="col-sm-10">
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="monday">
+                                        <label class="form-check-label" for="monday">
+                                            M
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="tuesday">
+                                        <label class="form-check-label" for="tuesday">
+                                            T
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="wednesday">
+                                        <label class="form-check-label" for="wednesday">
+                                            W
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="thursday">
+                                        <label class="form-check-label" for="thursday">
+                                            Th
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="friday">
+                                        <label class="form-check-label" for="friday">
+                                            F
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <hr />
 
     <div id="footer">
