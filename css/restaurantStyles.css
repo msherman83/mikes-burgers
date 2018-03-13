@@ -7,6 +7,11 @@ body {
     background-color: lightblue;
 }
 
+.slogan {
+    font-style: italic;
+    text-align: center;
+}
+
 h1 {
     text-align: center;
 }
