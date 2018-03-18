@@ -6,15 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mike's Burgers | Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Font Awesome for Glyphicon -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
     <style>
         body {
             background-color: lightgray;
+            font-family: 'Permanent Marker', cursive;
         }
 
         #header {
             font-family: 'Coiny', cursive;
+            background-color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .slogan {
+            font-style: italic;
+            text-align: center;
         }
 
         #container {
@@ -25,6 +41,10 @@
             font-size: 20px;
             line-height: 40px;
             color: darkblue;
+        }
+
+        #beverages-table h3 {
+            text-align: center;
         }
 
         /* Links */
@@ -76,21 +96,34 @@
             background-color: #d5d2cb;
 
         }
+
+        footer {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <div id="header">
         <h1>Mike's Burgers</h1>
+        <p class="slogan">Where the grill never stops!</p>
     </div>
 
     <hr />
 
-    <div id="nav">
-        <a target="_blank" href="./index.html">Home</a>
-        <a target="_blank" href="./menu.html">Menu</a>
-        <a target="_blank" href="./contact.html">Contact Us</a>
-    </div>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="./index.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="./menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+        </li>
+    </ul>
 
     <hr />
     <div id="container">
@@ -101,59 +134,73 @@
             </div>
 
             <div id="menu-items">
-                <h3>Double Bacon w/ Cheese</h3>
-                <ul>
-                    <li>1lb all beef patty</li>
-                    <li>Loaded with American Cheese</li>
-                    <li>Loaded with real bacon</li>
-                    <li>Served with friends</li>
-                </ul>
-
-                <h3>Double Burger</h3>
-                <ul>
-                    <li>1lb all beef patty</li>
-                    <li>Special Sauce</li>
-                    <li>Served with friends</li>
-                </ul>
-
-                <h3>Triple Bacon w/ Cheese</h3>
-                <ul>
-                    <li>3x 1lb all beef patty</li>
-                    <li>Loaded with American Cheese</li>
-                    <li>Loaded with real bacon</li>
-                    <li>Served with friends</li>
-                </ul>
-
-                <h3>Single Burger</h3>
-                <ul>
-                    <li>.5lb all beef patty</li>
-                    <li>Special Sauce</li>
-                    <li>Served with friends</li>
-                </ul>
-
-                <h3>Good Burger</h3>
-                <ul>
-                    <li>1lb all beef patty</li>
-                    <li>Loaded with American Cheese</li>
-                    <li>Egg</li>
-                    <li>Special Sauce</li>
-                    <li>Served with friends</li>
-                </ul>
-
-                <h3>Build Your Own</h3>
-                <ul>
-                    <li>Choice of patty</li>
-                    <li>Choice of toppings</li>
-                    <li>Choice of sauce</li>
-                    <li>Choice of side</li>
-                </ul>
-
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3>Double Bacon w/ Cheese</h3>
+                            <ul>
+                                <li>1lb all beef patty</li>
+                                <li>Loaded with American Cheese</li>
+                                <li>Loaded with real bacon</li>
+                                <li>Served with friends</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <h3>Double Burger</h3>
+                            <ul>
+                                <li>1lb all beef patty</li>
+                                <li>Special Sauce</li>
+                                <li>Served with friends</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <h3>Triple Bacon w/ Cheese</h3>
+                            <ul>
+                                <li>3x 1lb all beef patty</li>
+                                <li>Loaded with American Cheese</li>
+                                <li>Loaded with real bacon</li>
+                                <li>Served with friends</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3>Single Burger</h3>
+                            <ul>
+                                <li>.5lb all beef patty</li>
+                                <li>Special Sauce</li>
+                                <li>Served with friends</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <h3>Good Burger</h3>
+                            <ul>
+                                <li>1lb all beef patty</li>
+                                <li>Loaded with American Cheese</li>
+                                <li>Egg</li>
+                                <li>Special Sauce</li>
+                                <li>Served with friends</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <h3>Build Your Own</h3>
+                            <ul>
+                                <li>Choice of patty</li>
+                                <li>Choice of toppings</li>
+                                <li>Choice of sauce</li>
+                                <li>Choice of side</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <hr />
+
         <div id="beverages-table">
             <table>
-                <caption>Tasty Beverages</caption>
+                <h3>Tasty Beverages</h3>
                 <tr>
                     <td>Liter of Cola</td>
                     <td>$7.00</td>
@@ -182,6 +229,14 @@
             <p>Call us today! 1-800-555-2000</p>
         </footer>
     </div>
+
+    <!-- Boostrap JS, Popper.js and jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </body>
 
