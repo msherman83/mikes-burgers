@@ -30,6 +30,10 @@ noscript {
     text-align: center;
 }
 
+.tasty-burger {
+    border-radius: 50%;
+}
+
 .card {
     margin-bottom: 50px;
 }
